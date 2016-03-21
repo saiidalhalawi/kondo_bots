@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160321024911) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "conversations", force: true do |t|
     t.integer  "statements_count", default: 0
     t.datetime "created_at"

@@ -4,7 +4,8 @@ ruby '2.2.2'
 # core
 gem 'rails'
 gem 'rails-api'
-gem 'mysql2', '~> 0.3.18'
+gem 'pg'
+# gem 'mysql2', '~> 0.3.18'
 
 # auth
 gem 'dalli'
