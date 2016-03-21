@@ -7,10 +7,6 @@ gem 'rails-api'
 gem 'pg'
 # gem 'mysql2', '~> 0.3.18'
 
-# auth
-gem 'dalli'
-gem 'devise'
-
 # core utils
 gem 'fileutils'
 gem 'nokogiri'
@@ -19,7 +15,6 @@ gem 'nokogiri'
 gem 'settingslogic'
 gem 'dotenv-rails'
 gem 'rails_config'
-
 
 # active record
 gem 'paranoia', '~> 2.0'
@@ -57,4 +52,8 @@ group :development, :test do
   gem 'timecop'
   gem 'awesome_print', require: 'ap'
   gem 'rails-erd'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
