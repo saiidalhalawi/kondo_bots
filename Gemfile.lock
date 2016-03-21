@@ -98,6 +98,8 @@ GEM
     minitest (5.8.4)
     mono_logger (1.1.0)
     multi_json (1.11.2)
+    natto (1.1.0)
+      ffi (>= 1.9.0)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -267,6 +269,7 @@ DEPENDENCIES
   factory_girl_rails
   fileutils
   guard-rspec
+  natto
   nokogiri
   paranoia (~> 2.0)
   pg

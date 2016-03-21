@@ -1,16 +1,15 @@
 class Api::V1::TalkController < ApplicationController
 
   def speak
-    result = { response: 'こんにちわー' }
+    error_responce(401, 'must contains `content` param') and return unless params.key?(:content)
+
+    morpheme = Morpheme.new
+    morpheme.classify(params[:content]).each do |item|
+      req_idiom = RequestIdiom.find_or_initialize_by(morph_type: item[:type], word: item[:word])
+      req_idiom.stock
+    end
+    res = RequestIdiom.my_response
+    result = { response: res }
     render_response result
   end
-
-  private
-    def statement_params
-      params.require(:statement).permit(
-        :conversation_id,
-        :speaker_id,
-        :content
-      )
-    end
 end

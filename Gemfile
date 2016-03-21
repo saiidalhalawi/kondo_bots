@@ -16,6 +16,9 @@ gem 'settingslogic'
 gem 'dotenv-rails'
 gem 'rails_config'
 
+# for Mecab
+gem 'natto'
+
 # active record
 gem 'paranoia', '~> 2.0'
 
