@@ -1,0 +1,1 @@
+{"nfs":{"/var/www/kondo_bots":{"type":"nfs","guestpath":"/var/www/kondo_bots","hostpath":"/Users/kanno/Documents/hackason/kondo_bots","disabled":false,"map_uid":501,"map_gid":20,"nfs_udp":true,"nfs_version":3,"uuid":"1923966155"}},"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/kanno/Documents/hackason/kondo_bots","disabled":false}}}
